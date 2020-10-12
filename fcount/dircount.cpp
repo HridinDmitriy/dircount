@@ -35,7 +35,8 @@ int main(int argc, const char* argv[])
 
 	OptionParser parser(++argv, argc - 1, options);
 	string header = "This utility is developed to count subdirectories of a given directiry.";
-	string footer = string("If you want to use an option parameter that starts with '-' or '--', \n") +
+	string footer = string("The parameter <path> of the directory option is \"./\" by default.\n\n") +
+		string("If you want to use an option parameter that starts with '-' or '--', \n") +
 		string("prefix it with '@', otherwise it will be threated as an option.");
 
 	HelpPrinter help_printer("dircount", options, header, footer, cout);
